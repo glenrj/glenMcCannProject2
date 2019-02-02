@@ -1,0 +1,88 @@
+header.home {
+    background: url(../assets/homeImage1.jpg);
+    background-size: cover;
+    height: 75vh;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    h1 {
+        display: flex;
+        flex-direction: column;
+        font-family: 'Playfair Display', serif;
+        @include fontSize(111.2);
+        font-weight: 900i;
+        color: $headerTwo;
+        margin-left: 14%;
+        margin-top: 10%;
+        z-index: 10;
+        span {
+            font-family: 'Lato', sans-serif;
+            @include fontSize(62);
+            color: $headerOne;
+            font-weight: bold;
+            line-height: 0.76;
+            letter-spacing: 6.7px;
+        }
+    }
+    .image {
+        width: 35%;
+        min-width: 400px;
+        max-width: 450px;
+        position: absolute;
+        left: 0;
+        bottom: - 8%;
+    }
+}
+
+.guyana {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10% 0;
+    .content {
+        display: flex;
+        justify-content: space-between;
+        width: 85%;
+        }
+    .guyanaText {
+        width: 65%;
+        h2 {
+            color: $headerOne;
+        }
+        p {
+            width: 100%;
+        }
+    }
+    .image {
+        width: 30%;
+        box-shadow: -20px 20px $primary;
+    }
+}
+
+.gallery {
+    background: $accentLight;
+    .content {
+        width: 85%;
+        padding: 10% 0;
+        margin: 0 auto;   
+    }
+    .image {
+        width: calc(33.3% - 2.5%);
+        float: left;
+        margin-right: 2.5%;
+    }
+}
+
+.info {
+    i {
+        background: $primary;
+        border-radius: 50%;
+        color: $background;
+        text-align: center;
+        padding: 10px;
+        font-size: 1.5rem;
+        
+    }
+}

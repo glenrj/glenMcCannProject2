@@ -131,3 +131,202 @@ legend, button::-moz-focus-inner, input::-moz-focus-inner {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
   box-sizing: border-box; }
+
+html {
+  font-size: 20px; }
+
+.wrapper {
+  margin: 0 auto;
+  background: #fafffe;
+  max-width: 1600px; }
+
+a {
+  text-decoration: none; }
+
+img {
+  width: 100%; }
+
+h2 {
+  font-family: 'Lato', sans-serif;
+  font-weight: bold;
+  font-size: 35px;
+  font-size: 1.75rem;
+  line-height: 0.95;
+  letter-spacing: 3.8px; }
+
+h3 {
+  font-family: 'Lato', sans-serif;
+  font-weight: bold;
+  font-size: 30px;
+  font-size: 1.5rem;
+  line-height: 1.95;
+  letter-spacing: 3.2px;
+  color: #0c5f4c; }
+
+p {
+  color: #2c2c2c;
+  font-family: 'Lato', sans-serif;
+  font-size: 20px;
+  font-size: 1rem;
+  letter-spacing: 2px;
+  line-height: 1.6; }
+
+li {
+  list-style: none; }
+
+.headerTop {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  height: 75px;
+  position: absolute;
+  top: 0;
+  width: 100%; }
+  .headerTop p {
+    font-family: 'Playfair Display', serif;
+    font-size: 34.6px;
+    font-size: 1.73rem;
+    color: #50e3c2;
+    margin-left: 10%; }
+  .headerTop nav {
+    width: 30%;
+    margin-right: 10%; }
+  .headerTop ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    list-style: none;
+    padding: 0; }
+    .headerTop ul a {
+      font-size: 20px;
+      font-size: 1rem;
+      weight: 300;
+      font-family: 'Lato', sans-serif;
+      text-transform: uppercase;
+      color: #fafffe;
+      margin-right: 10px;
+      line-height: 1.45; }
+      .headerTop ul a:hover {
+        color: #50e3c2;
+        -webkit-transition: 0.1s;
+        -o-transition: 0.1s;
+        transition: 0.1s; }
+
+.button {
+  background: #063974;
+  color: #fafffe;
+  padding: 10px;
+  font-family: 'Playfair Display', serif;
+  font-size: 20px;
+  font-size: 1rem;
+  line-height: 1.93;
+  letter-spacing: 2px;
+  font-weight: 900i; }
+
+header.home {
+  background: url(../assets/homeImage1.jpg);
+  background-size: cover;
+  height: 75vh;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center; }
+  header.home h1 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    font-family: 'Playfair Display', serif;
+    font-size: 111.2px;
+    font-size: 5.56rem;
+    font-weight: 900i;
+    color: #063974;
+    margin-left: 14%;
+    margin-top: 10%;
+    z-index: 10; }
+    header.home h1 span {
+      font-family: 'Lato', sans-serif;
+      font-size: 62px;
+      font-size: 3.1rem;
+      color: #0c5f4c;
+      font-weight: bold;
+      line-height: 0.76;
+      letter-spacing: 6.7px; }
+  header.home .image {
+    width: 35%;
+    min-width: 400px;
+    max-width: 450px;
+    position: absolute;
+    left: 0;
+    bottom: -8%; }
+
+.guyana {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding: 10% 0; }
+  .guyana .content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    width: 85%; }
+  .guyana .guyanaText {
+    width: 65%; }
+    .guyana .guyanaText h2 {
+      color: #0c5f4c; }
+    .guyana .guyanaText p {
+      width: 100%; }
+  .guyana .image {
+    width: 30%;
+    -webkit-box-shadow: -20px 20px #50e3c2;
+    box-shadow: -20px 20px #50e3c2; }
+
+.gallery {
+  background: #d2f9f1; }
+  .gallery .content {
+    width: 85%;
+    padding: 10% 0;
+    margin: 0 auto; }
+  .gallery .image {
+    width: calc(33.3% - 2.5%);
+    float: left;
+    margin-right: 2.5%; }
+
+.info i {
+  background: #50e3c2;
+  border-radius: 50%;
+  color: #fafffe;
+  text-align: center;
+  padding: 10px;
+  font-size: 1.5rem; }

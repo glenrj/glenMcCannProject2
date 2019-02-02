@@ -1,0 +1,114 @@
+// COLOR VARIABLES
+
+$primary: #50e3c2;
+// 80, 227, 194
+$background: #fafffe;
+// 250, 255, 254
+$accentLight: #d2f9f1;
+// 210, 249, 241
+$headerOne: #0c5f4c;
+// 12, 95, 76
+$headerTwo: #063974;
+// 6, 57, 116
+$text: #2c2c2c;
+// 44, 44, 44
+
+
+html {
+    font-size: 20px;
+}
+
+.wrapper {
+    margin: 0 auto;
+    background: $background;
+    max-width: 1600px;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    width: 100%;
+}
+
+h2 {
+    font-family: 'Lato', sans-serif;
+    font-weight: bold;
+    @include fontSize(35);
+    line-height: 0.95;
+    letter-spacing: 3.8px;
+}
+
+h3 {
+   font-family: 'Lato', sans-serif;
+    font-weight: bold;
+    @include fontSize(30);
+    line-height: 1.95;
+    letter-spacing: 3.2px;
+    color: $headerOne; 
+}
+
+p {
+    color: $text;
+    font-family: 'Lato', sans-serif;
+    @include fontSize(20);
+    letter-spacing: 2px;
+    line-height: 1.6;
+}
+
+li {
+    list-style: none;
+}
+
+.headerTop {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 75px;
+    // align-self: flex-start;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    // come back to this glen, you cannot use position: absolute here.
+    p {
+        font-family: 'Playfair Display', serif;
+        @include fontSize(34.6);
+        color: $primary;
+        margin-left: 10%;
+    }
+    nav{
+        width: 30%;
+        margin-right: 10%;
+    } 
+    ul {
+        display: flex;
+        justify-content: space-between;
+        list-style: none;
+        padding: 0;
+        a {
+            @include fontSize(20);
+            weight: 300;
+            font-family: 'Lato', sans-serif;
+            text-transform: uppercase;
+            color: $background;
+            margin-right: 10px;
+            line-height: 1.45;
+            &:hover {
+                color: $primary;
+                transition: 0.1s;
+            }
+        }
+    }
+}
+
+.button {
+    background: $headerTwo;
+    color: $background;
+    padding: 10px;
+    font-family: 'Playfair Display', serif;
+    @include fontSize(20);
+    line-height: 1.93;
+    letter-spacing: 2px;
+    font-weight: 900i;
+}
