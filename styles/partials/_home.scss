@@ -5,12 +5,10 @@
 
 header.home {
     background: url(../assets/homeImage1.jpg);
-    background-size: cover;
-    height: 75vh;
     position: relative;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     h1 {
         display: flex;
@@ -19,9 +17,9 @@ header.home {
         @include fontSize(111.2);
         font-weight: 900i;
         color: $headerTwo;
-        margin-left: 14%;
-        margin-top: 10%;
         z-index: 10;
+        margin-bottom: 10%;
+        // align-self: center;
         span {
             font-family: 'Lato', sans-serif;
             @include fontSize(62);
@@ -34,7 +32,7 @@ header.home {
     .image {
         width: 35%;
         min-width: 400px;
-        max-width: 450px;
+        max-width: 650px;
         position: absolute;
         left: 0;
         bottom: - 8%;
@@ -132,7 +130,7 @@ header.home {
     background: $accentLight;
     display: flex;
     justify-content: space-between;
-    h3 {
+    h2 {
         color: $headerTwo;
     }
     .image {

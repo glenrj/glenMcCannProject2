@@ -1,0 +1,94 @@
+header.blog {
+    background: url(../assets/blogImage1.jpg);
+    background-size: cover;
+
+}
+
+
+.blog {
+    display: flex;
+    justify-content: space-between;
+}
+
+.blogPost {
+    width: 63%;
+    border: 5px solid $primary;
+    border-left: none;
+    .image {
+        width: 98%;
+        position: relative;
+        left: 0;
+        bottom: 150px;
+        box-shadow: 20px 20px $primary;
+    }
+}
+
+.blogText,
+.comments .content,
+.form {
+    width: 85%;
+    margin-left: 10%;
+    margin-bottom: 5%;
+    h2 {
+        color: $headerOne;
+        margin-top: 0;
+    }
+}
+
+.blogInfo {
+    color: $headerTwo;
+    font-style: italic;
+    span {
+        font-weight: bold;
+    }
+}
+
+aside {
+    width: 22%;
+    margin-top: 10%;
+    h3 {
+        color: $headerTwo;
+        margin-bottom: 5%;
+    }
+    ul {
+        text-align: left;
+        padding-left: 5%;
+    }
+    li {
+        color: $primary;
+        list-style: circle;
+    }
+    nav a {
+        color: $text;
+        font-family: 'Lato', sans-serif;
+        @include fontSize(20);
+        letter-spacing: 2px;
+        line-height: 1.6;
+    }
+}
+
+.comments {
+    width: 63%;
+    h3 {
+        color: $text;
+    }
+}
+
+.comment {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 5%;
+    .image {
+        width: 10%;
+    }
+}
+
+.commentText {
+    width: 85%;
+}
+
+.commentInfo {
+    margin-top: 0;
+    font-weight: bold;
+    color: $headerTwo;
+}
