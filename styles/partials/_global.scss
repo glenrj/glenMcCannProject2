@@ -30,6 +30,7 @@ a {
 
 img {
     width: 100%;
+    object-fit: cover;
 }
 
 h2 {
@@ -111,4 +112,21 @@ li {
     line-height: 1.93;
     letter-spacing: 2px;
     font-weight: 900i;
+    text-transform: uppercase;
+    transition: 0.3s;
+    &:hover {
+        color: peachpuff;
+        box-shadow: -10px 10px $primary;
+    }
+}
+
+footer {
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+    background: $text;
+    p {
+        color: $background;
+        margin: 0;
+    }
 }

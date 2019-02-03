@@ -1,3 +1,5 @@
+// fontSize mixin from the class notes
+
 @mixin fontSize($sizeValue){
   font-size: $sizeValue * 1px;
   font-size: ($sizeValue/20) * 1rem;

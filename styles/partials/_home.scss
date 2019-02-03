@@ -1,3 +1,8 @@
+.content {
+    width: 85%;
+    // remember to go through and remove more specific instances of this
+}
+
 header.home {
     background: url(../assets/homeImage1.jpg);
     background-size: cover;
@@ -40,7 +45,7 @@ header.home {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 10% 0;
+    padding: 5% 0;
     .content {
         display: flex;
         justify-content: space-between;
@@ -65,7 +70,7 @@ header.home {
     background: $accentLight;
     .content {
         width: 85%;
-        padding: 10% 0;
+        padding: 5% 0;
         margin: 0 auto;   
     }
     .image {
@@ -76,13 +81,105 @@ header.home {
 }
 
 .info {
-    i {
-        background: $primary;
-        border-radius: 50%;
-        color: $background;
-        text-align: center;
-        padding: 10px;
-        font-size: 1.5rem;
-        
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5% 0% 2.5% 0%;
+    .content {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
     }
 }
+
+.infoItem {
+    width: calc(50% - 5%);
+    min-width: 400px;
+    display: flex;
+    margin-bottom: 2.5%;
+    h3 {
+        margin-top: 0;
+    }
+}
+
+.infoItem:nth-child(odd) {
+    margin-right: 5%;
+}
+
+.infoIcon {
+    color: $background;
+    background: $primary;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 5%;
+    i {
+        text-align: center;
+        font-size: 1.5rem;
+    }
+}
+
+.infoText {
+    width: calc(100% - (50px + 5%));
+}
+
+
+.travelTips {
+    background: $accentLight;
+    display: flex;
+    justify-content: space-between;
+    h3 {
+        color: $headerTwo;
+    }
+    .image {
+        width: 100%;
+        position: relative;
+    }
+    .travelTipsLeft,
+    .travelTipsRight {
+        width: 42%;
+        .text {
+            width: 65%;
+            margin: 10% 0%;
+        }
+    }
+    .travelTipsLeft {
+        .text {
+            margin-left: 35%;
+            text-align: right;
+        }
+        .image {
+            box-shadow: 20px 20px $primary;
+            top: -50px;
+        }
+    }
+    .travelTipsRight {
+        .text {
+            margin-right: 35%;
+        }
+        .image {
+            box-shadow: -20px 20px $primary;
+            bottom: -50px;
+        }
+    }
+}
+
+.freeTrip {
+    padding: 10% 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    h2 {
+        color: $headerOne;
+        margin-top: 0px;
+    }
+    .content {
+        text-align: center;
+    }
+}
+
+
