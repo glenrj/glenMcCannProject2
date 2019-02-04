@@ -19,9 +19,11 @@ header.home {
         color: $headerTwo;
         z-index: 10;
         margin-bottom: 10%;
-        // align-self: center;
+        margin-left: 13%;
+        text-transform: uppercase;
         span {
             font-family: 'Lato', sans-serif;
+            text-transform: lowercase;
             @include fontSize(62);
             color: $headerOne;
             font-weight: bold;
@@ -30,12 +32,12 @@ header.home {
         }
     }
     .image {
-        width: 35%;
-        min-width: 400px;
-        max-width: 650px;
+        width: 40%;
+        min-width: 500px;
+        // max-width: 650px;
         position: absolute;
         left: 0;
-        bottom: - 8%;
+        bottom: - 25%;
     }
 }
 
@@ -43,16 +45,17 @@ header.home {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 5% 0;
+    padding: 15% 0 5% 0;
     .content {
         display: flex;
         justify-content: space-between;
         width: 85%;
         }
     .guyanaText {
-        width: 65%;
+        width: 60%;
         h2 {
             color: $headerOne;
+            margin-top: 0;
         }
         p {
             width: 100%;
@@ -60,7 +63,10 @@ header.home {
     }
     .image {
         width: 30%;
-        box-shadow: -20px 20px $primary;
+        img {
+            box-shadow: -20px 20px $primary;
+
+        }
     }
 }
 
@@ -76,13 +82,16 @@ header.home {
         float: left;
         margin-right: 2.5%;
     }
+    .image:last-child {
+        margin-right: 0;
+    }
 }
 
 .info {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 5% 0% 2.5% 0%;
+    padding: 5% 0% 5% 0%;
     .content {
         display: flex;
         flex-wrap: wrap;
@@ -115,6 +124,7 @@ header.home {
     justify-content: center;
     align-items: center;
     margin-right: 5%;
+    margin-top: 1.5%;
     i {
         text-align: center;
         font-size: 1.5rem;
@@ -151,8 +161,10 @@ header.home {
             text-align: right;
         }
         .image {
-            box-shadow: 20px 20px $primary;
             top: -50px;
+            img {
+                box-shadow: 20px 20px $primary;
+            }
         }
     }
     .travelTipsRight {
@@ -160,8 +172,11 @@ header.home {
             margin-right: 35%;
         }
         .image {
-            box-shadow: -20px 20px $primary;
             bottom: -50px;
+            img {
+                box-shadow: -20px 20px $primary;
+                
+            }
         }
     }
 }

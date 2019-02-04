@@ -1,7 +1,41 @@
 header.contact {
     background: url(../assets/contactImage1.jpg);
     background-size: cover;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+    
+}
+
+.contactBody .form {
+    background: $background;
+    width: 60%;
+    position: absolute;
+    top: -150px;
+    box-shadow: 20px 20px $primary;
+    padding: 5%;
+}
+
+.contactBody {
+    position: relative;
+    min-height: 600px;
+}
+
+.contactAside {
+    float: right;
+    color: $text;
+    font-family: 'Lato', sans-serif;
+    @include fontSize(20);
+    letter-spacing: 2px;
+    line-height: 1.6;
+    margin-right: 5%;
+    margin-top: 10%;
+    ul {
+        padding: 0;
+    }
+    i {
+        font-size: 1.5rem;
+        margin-right: 2.5%;
+    }
+}
+
+.email {
+    font-weight: bold;
 }

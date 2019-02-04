@@ -19,7 +19,9 @@ header.blog {
         position: relative;
         left: 0;
         bottom: 150px;
-        box-shadow: 20px 20px $primary;
+        img {
+            box-shadow: 20px 20px $primary;
+        }
     }
 }
 
@@ -43,7 +45,7 @@ header.blog {
     }
 }
 
-aside {
+.blogAside {
     width: 22%;
     margin-top: 10%;
     h3 {
@@ -56,7 +58,14 @@ aside {
     }
     li {
         color: $primary;
-        list-style: circle;
+        list-style: disc;
+    }
+    a {
+        color: $text;
+        transition: 0.2s;
+        &:hover {
+            color: $primary;
+        }
     }
     nav a {
         color: $text;

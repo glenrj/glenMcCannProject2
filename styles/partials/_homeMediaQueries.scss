@@ -1,0 +1,84 @@
+@media (max-width: 1200px) {
+    header.home .image {
+        bottom: -20%;
+    }
+}
+
+@media (max-width: 1000px) {
+    header.home {
+        .image {
+        display: none;
+        }
+    }
+    .guyana {
+        padding: 5% 0%;
+        .content {
+            justify-content: center;
+        }
+        .guyanaText {
+            text-align: center;
+            width: 100%;
+        }
+        .image {
+            display: none;
+        }
+    }
+
+    .infoItem {
+        width: 100%;
+    }
+
+    .travelTips {
+        flex-direction: column;
+        padding: 0% 5%;
+        .travelTipsLeft,
+        .travelTipsRight {
+        width: 95%;
+            .text {
+                margin-left: 0;
+                width: 100%;
+                text-align: center;
+            }
+            .image {
+                width: 85%;
+            }
+        }
+        .travelTipsRight {
+            .image {
+                margin-left: 20%;
+            }
+        }
+    }
+}
+
+@media (max-width: 800px) {
+    header.home {
+        h1 {
+            margin-left: 1%;
+        }
+    }
+    .gallery .image:nth-child(1) {
+        display: none;
+    }
+
+    .gallery .image {
+        width: calc(50% - 2.5%);
+    }
+}
+
+@media (max-width: 550px) {
+    .gallery .image {
+        float: none;
+        margin-right: 0;
+        margin-top: 5%;
+        width: 100%;
+    }
+}
+
+@media (max-width: 500px) {
+    .travelTips{
+        .image {
+            display: none;
+        }
+    }
+}

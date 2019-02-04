@@ -133,7 +133,7 @@ legend, button::-moz-focus-inner, input::-moz-focus-inner {
   box-sizing: border-box; }
 
 html {
-  font-size: 20px; }
+  font-size: 125%; }
 
 .visuallyHidden:not(:focus):not(:active) {
   position: absolute;
@@ -155,7 +155,8 @@ html {
 header {
   background-size: cover;
   height: 75vh;
-  max-height: 650px; }
+  max-height: 650px;
+  min-height: 300px; }
 
 header.blog,
 header.contact {
@@ -276,7 +277,9 @@ li {
   text-transform: uppercase;
   -webkit-transition: 0.3s;
   -o-transition: 0.3s;
-  transition: 0.3s; }
+  transition: 0.3s;
+  margin-top: 10px;
+  display: inline-block; }
   .button:hover,
   [type=submit]:hover {
     color: peachpuff;
@@ -359,9 +362,12 @@ header.home {
     font-weight: 900i;
     color: #063974;
     z-index: 10;
-    margin-bottom: 10%; }
+    margin-bottom: 10%;
+    margin-left: 13%;
+    text-transform: uppercase; }
     header.home h1 span {
       font-family: 'Lato', sans-serif;
+      text-transform: lowercase;
       font-size: 62px;
       font-size: 3.1rem;
       color: #0c5f4c;
@@ -369,12 +375,11 @@ header.home {
       line-height: 0.76;
       letter-spacing: 6.7px; }
   header.home .image {
-    width: 35%;
-    min-width: 400px;
-    max-width: 650px;
+    width: 40%;
+    min-width: 500px;
     position: absolute;
     left: 0;
-    bottom: -8%; }
+    bottom: -25%; }
 
 .guyana {
   display: -webkit-box;
@@ -386,7 +391,7 @@ header.home {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  padding: 5% 0; }
+  padding: 15% 0 5% 0; }
   .guyana .content {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -396,15 +401,17 @@ header.home {
     justify-content: space-between;
     width: 85%; }
   .guyana .guyanaText {
-    width: 65%; }
+    width: 60%; }
     .guyana .guyanaText h2 {
-      color: #0c5f4c; }
+      color: #0c5f4c;
+      margin-top: 0; }
     .guyana .guyanaText p {
       width: 100%; }
   .guyana .image {
-    width: 30%;
-    -webkit-box-shadow: -20px 20px #50e3c2;
-    box-shadow: -20px 20px #50e3c2; }
+    width: 30%; }
+    .guyana .image img {
+      -webkit-box-shadow: -20px 20px #50e3c2;
+      box-shadow: -20px 20px #50e3c2; }
 
 .gallery {
   background: #d2f9f1; }
@@ -416,6 +423,8 @@ header.home {
     width: calc(33.3% - 2.5%);
     float: left;
     margin-right: 2.5%; }
+  .gallery .image:last-child {
+    margin-right: 0; }
 
 .info {
   display: -webkit-box;
@@ -427,7 +436,7 @@ header.home {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  padding: 5% 0% 2.5% 0%; }
+  padding: 5% 0% 5% 0%; }
   .info .content {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -469,7 +478,8 @@ header.home {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  margin-right: 5%; }
+  margin-right: 5%;
+  margin-top: 1.5%; }
   .infoIcon i {
     text-align: center;
     font-size: 1.5rem; }
@@ -501,15 +511,17 @@ header.home {
     margin-left: 35%;
     text-align: right; }
   .travelTips .travelTipsLeft .image {
-    -webkit-box-shadow: 20px 20px #50e3c2;
-    box-shadow: 20px 20px #50e3c2;
     top: -50px; }
+    .travelTips .travelTipsLeft .image img {
+      -webkit-box-shadow: 20px 20px #50e3c2;
+      box-shadow: 20px 20px #50e3c2; }
   .travelTips .travelTipsRight .text {
     margin-right: 35%; }
   .travelTips .travelTipsRight .image {
-    -webkit-box-shadow: -20px 20px #50e3c2;
-    box-shadow: -20px 20px #50e3c2;
     bottom: -50px; }
+    .travelTips .travelTipsRight .image img {
+      -webkit-box-shadow: -20px 20px #50e3c2;
+      box-shadow: -20px 20px #50e3c2; }
 
 .freeTrip {
   padding: 10% 0;
@@ -548,9 +560,10 @@ header.blog {
     width: 98%;
     position: relative;
     left: 0;
-    bottom: 150px;
-    -webkit-box-shadow: 20px 20px #50e3c2;
-    box-shadow: 20px 20px #50e3c2; }
+    bottom: 150px; }
+    .blogPost .image img {
+      -webkit-box-shadow: 20px 20px #50e3c2;
+      box-shadow: 20px 20px #50e3c2; }
 
 .blogText,
 .comments .content,
@@ -570,19 +583,26 @@ header.blog {
   .blogInfo span {
     font-weight: bold; }
 
-aside {
+.blogAside {
   width: 22%;
   margin-top: 10%; }
-  aside h3 {
+  .blogAside h3 {
     color: #063974;
     margin-bottom: 5%; }
-  aside ul {
+  .blogAside ul {
     text-align: left;
     padding-left: 5%; }
-  aside li {
+  .blogAside li {
     color: #50e3c2;
-    list-style: circle; }
-  aside nav a {
+    list-style: disc; }
+  .blogAside a {
+    color: #2c2c2c;
+    -webkit-transition: 0.2s;
+    -o-transition: 0.2s;
+    transition: 0.2s; }
+    .blogAside a:hover {
+      color: #50e3c2; }
+  .blogAside nav a {
     color: #2c2c2c;
     font-family: 'Lato', sans-serif;
     font-size: 20px;
@@ -616,14 +636,118 @@ aside {
 
 header.contact {
   background: url(../assets/contactImage1.jpg);
-  background-size: cover;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between; }
+  background-size: cover; }
+
+.contactBody .form {
+  background: #fafffe;
+  width: 60%;
+  position: absolute;
+  top: -150px;
+  -webkit-box-shadow: 20px 20px #50e3c2;
+  box-shadow: 20px 20px #50e3c2;
+  padding: 5%; }
+
+.contactBody {
+  position: relative;
+  min-height: 600px; }
+
+.contactAside {
+  float: right;
+  color: #2c2c2c;
+  font-family: 'Lato', sans-serif;
+  font-size: 20px;
+  font-size: 1rem;
+  letter-spacing: 2px;
+  line-height: 1.6;
+  margin-right: 5%;
+  margin-top: 10%; }
+  .contactAside ul {
+    padding: 0; }
+  .contactAside i {
+    font-size: 1.5rem;
+    margin-right: 2.5%; }
+
+.email {
+  font-weight: bold; }
+
+@media (max-width: 1200px) {
+  header.home .image {
+    bottom: -20%; } }
+
+@media (max-width: 1000px) {
+  header.home .image {
+    display: none; }
+  .guyana {
+    padding: 5% 0%; }
+    .guyana .content {
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      justify-content: center; }
+    .guyana .guyanaText {
+      text-align: center;
+      width: 100%; }
+    .guyana .image {
+      display: none; }
+  .infoItem {
+    width: 100%; }
+  .travelTips {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    padding: 0% 5%; }
+    .travelTips .travelTipsLeft,
+    .travelTips .travelTipsRight {
+      width: 95%; }
+      .travelTips .travelTipsLeft .text,
+      .travelTips .travelTipsRight .text {
+        margin-left: 0;
+        width: 100%;
+        text-align: center; }
+      .travelTips .travelTipsLeft .image,
+      .travelTips .travelTipsRight .image {
+        width: 85%; }
+    .travelTips .travelTipsRight .image {
+      margin-left: 20%; } }
+
+@media (max-width: 800px) {
+  header.home h1 {
+    margin-left: 1%; }
+  .gallery .image:nth-child(1) {
+    display: none; }
+  .gallery .image {
+    width: calc(50% - 2.5%); } }
+
+@media (max-width: 550px) {
+  .gallery .image {
+    float: none;
+    margin-right: 0;
+    margin-top: 5%;
+    width: 100%; } }
+
+@media (max-width: 500px) {
+  .travelTips .image {
+    display: none; } }
+
+@media (max-width: 1150px) {
+  .contactAside {
+    margin-right: 1.5%; } }
+
+@media (max-width: 1000px) {
+  .contactAside {
+    float: none;
+    clear: both;
+    padding-top: 50%;
+    width: 85%;
+    margin: 0 auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center; }
+    .contactAside div {
+      width: 33%; } }
