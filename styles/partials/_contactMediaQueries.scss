@@ -6,23 +6,79 @@
 
 @media (max-width: 1000px) {
     .contactAside {
+        // text-align: center;
         float: none;
         clear: both;
-        padding-top: 55%;
+        padding-top: 60%;
         padding-bottom: 5%;
-        width: 85%;
+        width: 75%;
         margin: 0 auto;
         display: flex;
         justify-content: space-between;
         align-items: center;
         div {
-            width: 33%;
+            width: 50%;
+        }
+        ul {
+            text-align: right;
         }
     }
+
+    
 
     .contactBody {
         .form {
             width: 80%;
         }
+    }
+}
+
+@media (max-width: 730px) {
+    .contactAside {
+        width: 90%;
+    }
+}
+
+@media (max-width: 656px) {
+    header.contact {
+        h1 {
+            line-height: 1;
+            @include fontSize(60)
+        }
+    }
+    .contactAside {
+        flex-direction: column;
+        padding-top: 70%;
+        li,
+        .icons,
+        .email {
+            text-align: center;
+            width: 100%;
+        }
+    }
+}
+
+@media (max-width: 550px) {
+    .contactAside {
+        padding-top: 90%;
+         li,
+         p {
+             @include fontSize(18);
+         }
+    }
+    footer p {
+        @include fontSize(16);
+    }
+}
+
+@media (max-width: 475px) {
+    .contactAside {
+        padding-top: 100%;
+    }
+}
+
+@media (max-width: 400px) {
+    .contactAside {
+        padding-top: 120%;
     }
 }

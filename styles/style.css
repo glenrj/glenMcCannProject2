@@ -689,7 +689,12 @@ header.contact {
     padding: 0; }
   .contactAside i {
     font-size: 1.5rem;
-    margin-right: 2.5%; }
+    margin-right: 2.5%;
+    -webkit-transition: 0.2s;
+    -o-transition: 0.2s;
+    transition: 0.2s; }
+    .contactAside i:hover {
+      color: #50e3c2; }
 
 .email {
   font-weight: bold; }
@@ -875,6 +880,9 @@ header.contact {
     height: 50vh; }
     header.blog h1 {
       margin-bottom: 30px; }
+  .blogPost,
+  .comments {
+    width: 95%; }
   .blogPost .image {
     width: calc(100% + 5px);
     top: -5px;
@@ -902,9 +910,9 @@ header.contact {
   .contactAside {
     float: none;
     clear: both;
-    padding-top: 55%;
+    padding-top: 60%;
     padding-bottom: 5%;
-    width: 85%;
+    width: 75%;
     margin: 0 auto;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -916,9 +924,51 @@ header.contact {
     -ms-flex-align: center;
     align-items: center; }
     .contactAside div {
-      width: 33%; }
+      width: 50%; }
+    .contactAside ul {
+      text-align: right; }
   .contactBody .form {
     width: 80%; } }
+
+@media (max-width: 730px) {
+  .contactAside {
+    width: 90%; } }
+
+@media (max-width: 656px) {
+  header.contact h1 {
+    line-height: 1;
+    font-size: 60px;
+    font-size: 3rem; }
+  .contactAside {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    padding-top: 70%; }
+    .contactAside li,
+    .contactAside .icons,
+    .contactAside .email {
+      text-align: center;
+      width: 100%; } }
+
+@media (max-width: 550px) {
+  .contactAside {
+    padding-top: 90%; }
+    .contactAside li,
+    .contactAside p {
+      font-size: 18px;
+      font-size: 0.9rem; }
+  footer p {
+    font-size: 16px;
+    font-size: 0.8rem; } }
+
+@media (max-width: 475px) {
+  .contactAside {
+    padding-top: 100%; } }
+
+@media (max-width: 400px) {
+  .contactAside {
+    padding-top: 120%; } }
 
 @media (max-width: 900px) {
   .headerTop nav {
