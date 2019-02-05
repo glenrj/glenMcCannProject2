@@ -135,6 +135,21 @@ legend, button::-moz-focus-inner, input::-moz-focus-inner {
 html {
   font-size: 125%; }
 
+.skipLink {
+  position: absolute;
+  left: -1000px;
+  top: 5px;
+  z-index: 999;
+  background: #d2f9f1;
+  color: #2c2c2c;
+  font-family: 'Lato', sans-serif;
+  font-weight: 300;
+  text-transform: uppercase;
+  padding: 2px; }
+
+.skipLink:focus {
+  left: 40%; }
+
 .visuallyHidden:not(:focus):not(:active) {
   position: absolute;
   width: 1px;
