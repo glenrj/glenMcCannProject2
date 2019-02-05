@@ -455,7 +455,7 @@ header.home {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  padding: 5% 0% 5% 0%; }
+  padding: 5% 0%; }
   .info .content {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -705,7 +705,6 @@ header.contact {
       -ms-flex-pack: center;
       justify-content: center; }
     .guyana .guyanaText {
-      text-align: center;
       width: 100%; }
     .guyana .image {
       display: none; }
@@ -749,6 +748,17 @@ header.contact {
       font-size: 2.1rem; } }
 
 @media (max-width: 550px) {
+  .guyana {
+    padding: 20% 0%; }
+  .guyanaText p,
+  .infoText p,
+  .travelTips p,
+  .freeTrip p {
+    font-size: 18px;
+    font-size: 0.9rem; }
+  footer p {
+    font-size: 16px;
+    font-size: 0.8rem; }
   .gallery .image {
     float: none;
     margin-right: 0;
@@ -760,8 +770,33 @@ header.contact {
     height: 50vh; }
     header.home h1 {
       display: none; }
-  .travelTips .image {
-    display: none; } }
+  .travelTips {
+    padding: 10% 5%; }
+    .travelTips .image {
+      display: none; } }
+
+@media (max-width: 450px) {
+  .info {
+    padding: 15% 5%; }
+    .info .content {
+      width: 100%; }
+  .infoIcon {
+    display: none; }
+  .infoText {
+    margin: 5% 0; }
+  .infoItem {
+    margin: 0;
+    min-width: 300px; }
+  .infoItem:nth-child(odd) {
+    margin: 0; }
+  .travelTips .travelTipsLeft .text,
+  .travelTips .travelTipsRight .text {
+    text-align: left;
+    margin: 15% 0; }
+  .freeTrip {
+    padding: 15% 0; }
+    .freeTrip .content {
+      text-align: left; } }
 
 @media (max-width: 1150px) {
   .contactAside {
