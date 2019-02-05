@@ -8,7 +8,8 @@
     .contactAside {
         float: none;
         clear: both;
-        padding-top: 50%;
+        padding-top: 55%;
+        padding-bottom: 5%;
         width: 85%;
         margin: 0 auto;
         display: flex;
@@ -16,6 +17,12 @@
         align-items: center;
         div {
             width: 33%;
+        }
+    }
+
+    .contactBody {
+        .form {
+            width: 80%;
         }
     }
 }

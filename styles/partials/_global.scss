@@ -98,19 +98,39 @@ li {
         @include fontSize(34.6);
         color: $primary;
         margin-left: 10%;
+        display: inline-block;
     }
-    nav{
+    nav {
         width: 30%;
         margin-right: 10%;
     } 
-    ul {
+    .mobileMenu {
+        background: none;
+        border: none;
+        display: none;
+        @include fontSize(20);
+        font-weight: 300;
+        font-family: 'Lato', sans-serif;
+        text-transform: uppercase;
+        color: $background;
+        line-height: 1.45;
+        span {
+            color: $primary;
+            // font-size: 0.9rem;
+        }
+        &:hover {
+            color: $primary;
+            transition: 0.1s;
+        }
+    }
+    ul.subMenu {
         display: flex;
         justify-content: space-between;
         list-style: none;
         padding: 0;
-        a {
+        a, {
             @include fontSize(20);
-            weight: 300;
+            font-weight: 300;
             font-family: 'Lato', sans-serif;
             text-transform: uppercase;
             color: $background;

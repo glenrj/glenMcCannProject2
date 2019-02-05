@@ -235,11 +235,30 @@ li {
     font-size: 34.6px;
     font-size: 1.73rem;
     color: #50e3c2;
-    margin-left: 10%; }
+    margin-left: 10%;
+    display: inline-block; }
   .headerTop nav {
     width: 30%;
     margin-right: 10%; }
-  .headerTop ul {
+  .headerTop .mobileMenu {
+    background: none;
+    border: none;
+    display: none;
+    font-size: 20px;
+    font-size: 1rem;
+    font-weight: 300;
+    font-family: 'Lato', sans-serif;
+    text-transform: uppercase;
+    color: #fafffe;
+    line-height: 1.45; }
+    .headerTop .mobileMenu span {
+      color: #50e3c2; }
+    .headerTop .mobileMenu:hover {
+      color: #50e3c2;
+      -webkit-transition: 0.1s;
+      -o-transition: 0.1s;
+      transition: 0.1s; }
+  .headerTop ul.subMenu {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -248,16 +267,16 @@ li {
     justify-content: space-between;
     list-style: none;
     padding: 0; }
-    .headerTop ul a {
+    .headerTop ul.subMenu a {
       font-size: 20px;
       font-size: 1rem;
-      weight: 300;
+      font-weight: 300;
       font-family: 'Lato', sans-serif;
       text-transform: uppercase;
       color: #fafffe;
       margin-right: 10px;
       line-height: 1.45; }
-      .headerTop ul a:hover {
+      .headerTop ul.subMenu a:hover {
         color: #50e3c2;
         -webkit-transition: 0.1s;
         -o-transition: 0.1s;
@@ -677,6 +696,8 @@ header.contact {
 @media (max-width: 1000px) {
   header.home .image {
     display: none; }
+  header.home h1 {
+    margin-left: 0; }
   .guyana {
     padding: 5% 0%; }
     .guyana .content {
@@ -718,6 +739,15 @@ header.contact {
   .gallery .image {
     width: calc(50% - 2.5%); } }
 
+@media (max-width: 775px) {
+  header.home h1 {
+    font-size: 75px;
+    font-size: 3.75rem;
+    margin-bottom: 25%; }
+    header.home h1 span {
+      font-size: 42px;
+      font-size: 2.1rem; } }
+
 @media (max-width: 550px) {
   .gallery .image {
     float: none;
@@ -726,6 +756,10 @@ header.contact {
     width: 100%; } }
 
 @media (max-width: 500px) {
+  header.home {
+    height: 50vh; }
+    header.home h1 {
+      display: none; }
   .travelTips .image {
     display: none; } }
 
@@ -737,7 +771,8 @@ header.contact {
   .contactAside {
     float: none;
     clear: both;
-    padding-top: 50%;
+    padding-top: 55%;
+    padding-bottom: 5%;
     width: 85%;
     margin: 0 auto;
     display: -webkit-box;
@@ -750,4 +785,43 @@ header.contact {
     -ms-flex-align: center;
     align-items: center; }
     .contactAside div {
-      width: 33%; } }
+      width: 33%; }
+  .contactBody .form {
+    width: 80%; } }
+
+@media (max-width: 900px) {
+  .headerTop nav {
+    margin-right: 10%; }
+  .headerTop .subMenu li {
+    display: none; }
+  .headerTop button {
+    width: 100%;
+    padding: 0; }
+  .headerTop ul.mainMenu {
+    padding-left: 0; }
+  .headerTop .mobileMenu {
+    text-align: right;
+    min-width: 90px;
+    display: inline-block;
+    position: relative;
+    right: 0; }
+  .headerTop .mainMenu li:hover li,
+  .headerTop .mainMenu li:focus-within li {
+    display: inline-block; }
+  .headerTop li {
+    text-align: right; }
+  .headerTop ul.subMenu {
+    position: absolute;
+    right: 10%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column; } }
+
+@media (max-width: 400px) {
+  .headerTop ul.subMenu {
+    right: 2%; }
+  .headerTop nav {
+    margin-right: 2%; }
+  .headerTop p.logo {
+    margin-left: 2%; } }

@@ -1,0 +1,53 @@
+@media (max-width: 900px) {
+    .headerTop {
+        nav {
+            margin-right: 10%;
+        }
+        .subMenu li {
+            display: none;
+        }
+        button {
+            width: 100%;
+            padding: 0;
+        }
+
+        ul.mainMenu {
+            padding-left: 0;
+        }
+        
+        .mobileMenu {
+            text-align: right;
+            min-width: 90px;
+            display: inline-block;
+            position: relative;
+            right: 0;
+        }
+
+        .mainMenu li:hover li,
+        .mainMenu li:focus-within li {
+            display: inline-block;
+        }
+        li {
+            text-align: right;
+        }
+        ul.subMenu {
+            position: absolute;
+            right: 10%;
+            flex-direction: column;
+        }
+    }
+}
+
+@media (max-width: 400px) {
+.headerTop {
+    ul.subMenu {
+        right: 2%;
+    }
+    nav {
+        margin-right: 2%;
+    }
+    p.logo {
+        margin-left: 2%;
+    }
+}
+}
