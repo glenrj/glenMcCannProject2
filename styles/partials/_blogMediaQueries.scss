@@ -1,0 +1,120 @@
+@media (max-width: 1150px) {
+    .blogPost {
+        width: 70%;
+    }
+}
+
+@media (max-width: 1050px) {
+    .blogPost {
+        width: 75%;
+    }
+}
+
+@media (max-width: 1000px) {
+    .blog {
+        flex-direction: column;
+    }
+    .blogPost,
+    .comments {
+        width: 90%;
+    }
+    .blogAside {
+        margin: 10% auto;
+        width: 90%;
+        order: 2;
+        display: flex;
+        justify-content: space-between;
+        .image {
+            display: none;
+        }
+        .mission,
+        .recent {
+            width: 45%;
+        }
+
+        .recent,
+        .recent li {
+            text-align: right;
+        }
+    }
+}
+
+@media (max-width: 800px) {
+    .blogPost {
+        .image {
+            width: 97.5%;
+        }
+    }
+}
+
+@media (max-width: 700px) {
+    .blogAside {
+        .mission p,
+        .recent li {
+            @include fontSize(18);
+        }
+        .mission h3,
+        .recent h3 {
+            text-align: center;
+            @include fontSize(25);
+        }
+
+    }
+}
+
+@media (max-width: 650px) {
+    .blogPost {
+        .image {
+            width: 97%;
+        }
+    }
+
+    .blogAside {
+        flex-direction: column;
+        .mission,
+        .recent {
+            width: 95%;
+        }
+        .recent li {
+            text-align: left;
+        }
+    }
+}
+
+@media (max-width: 550px) {
+    header.blog {
+        height: 50vh;
+        h1 {
+        margin-bottom: 30px;
+        }
+    }
+    .blogPost,
+    .comments {
+        width: 95%;
+    .blogPost {
+        .image {
+            width: calc(100% + 5px);
+            top: -5px;
+            margin-bottom: 10%;
+            img {
+                box-shadow: none;
+            }
+        }
+    }
+    .blogText p,
+    .commentText p {
+        @include fontSize(18);
+    }
+
+    .form {
+        [type=text],
+        [type=email] {
+            width: 95%;
+            margin-top: 15px;
+        }
+    }
+
+    footer p {
+        @include fontSize(16);
+    }
+}

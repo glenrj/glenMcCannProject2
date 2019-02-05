@@ -7,6 +7,7 @@ header.blog {
 
 .blog {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
 }
 
@@ -23,6 +24,10 @@ header.blog {
             box-shadow: 20px 20px $primary;
         }
     }
+}
+
+.comments {
+    width: 100%;
 }
 
 .blogText,
@@ -61,7 +66,7 @@ header.blog {
         list-style: disc;
     }
     a {
-        color: $text;
+        color: $headerOne;
         transition: 0.2s;
         &:hover {
             color: $primary;
