@@ -1,16 +1,24 @@
+// MEDIA QUERIES FOR BLOG PAGE
+
+// 1150px
 @media (max-width: 1150px) {
+    // post
     .blogPost {
         width: 70%;
     }
 }
 
+// 1050px
 @media (max-width: 1050px) {
+    // post
     .blogPost {
         width: 75%;
     }
 }
 
+// 1000px
 @media (max-width: 1000px) {
+    // post + comments
     .blog {
         flex-direction: column;
     }
@@ -18,6 +26,8 @@
     .comments {
         width: 90%;
     }
+
+    // aside
     .blogAside {
         margin: 10% auto;
         width: 90%;
@@ -39,7 +49,9 @@
     }
 }
 
+// 800px
 @media (max-width: 800px) {
+    // post
     .blogPost {
         .image {
             width: 97.5%;
@@ -47,7 +59,9 @@
     }
 }
 
+// 700px
 @media (max-width: 700px) {
+    // aside
     .blogAside {
         .mission p,
         .recent li {
@@ -58,17 +72,19 @@
             text-align: center;
             @include fontSize(25);
         }
-
     }
 }
 
+// 650px
 @media (max-width: 650px) {
+    // post
     .blogPost {
         .image {
             width: 97%;
         }
     }
 
+    // aside
     .blogAside {
         flex-direction: column;
         .mission,
@@ -81,13 +97,16 @@
     }
 }
 
+// 550px
 @media (max-width: 550px) {
+    // header
     header.blog {
         height: 50vh;
         h1 {
         margin-bottom: 30px;
         }
     }
+    // post + comments
     .blogPost,
     .comments {
         width: 95%;
@@ -107,6 +126,7 @@
         @include fontSize(18);
     }
 
+    // form
     .form {
         [type=text],
         [type=email] {
@@ -115,6 +135,7 @@
         }
     }
 
+    // footer
     footer p {
         @include fontSize(16);
     }

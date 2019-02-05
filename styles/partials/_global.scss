@@ -13,10 +13,12 @@ $headerTwo: #063974;
 $text: #2c2c2c;
 // 44, 44, 44
 
-
+// base font size
 html {
     font-size: 125%;
 }
+
+// skip link
 
 .skipLink {
   position: absolute;
@@ -37,10 +39,13 @@ html {
 
 .visuallyHidden:not(:focus):not(:active) { position: absolute; width: 1px; height: 1px; margin: -1px;border: 0;padding: 0;white-space: nowrap;clip-path: inset(100%);clip: rect(00 0 0);overflow: hidden;}
 
+// wrapper / max-width
+
 .wrapper {
     margin: 0 auto;
     max-width: 1600px;
 }
+// base styles
 
 header {
     background-size: cover;
@@ -104,6 +109,8 @@ li {
     list-style: none;
 }
 
+// header/nav bar
+
 .headerTop {
     display: flex;
     justify-content: space-between;
@@ -161,6 +168,8 @@ li {
     }
 }
 
+// buttons
+
 .button,
 [type=submit] {
     background: $headerTwo;
@@ -180,6 +189,8 @@ li {
         box-shadow: -10px 10px $primary;
     }
 }
+
+// forms
 
 form {
     display: flex;
@@ -214,6 +225,8 @@ textarea {
     font-family: 'Lato', sans-serif;
     font-weight: 300;
 }
+
+// footer
 
 footer {
     width: 100%;

@@ -1,8 +1,10 @@
+
+// overall style for content inside sections
 .content {
     width: 85%;
-    // remember to go through and remove more specific instances of this
 }
 
+// header
 header.home {
     background: url(../assets/homeImage1.jpg);
     position: relative;
@@ -41,6 +43,7 @@ header.home {
     }
 }
 
+// visit guyana section
 .guyana {
     display: flex;
     justify-content: center;
@@ -70,6 +73,7 @@ header.home {
     }
 }
 
+// gallery section
 .gallery {
     background: $accentLight;
     .content {
@@ -87,6 +91,7 @@ header.home {
     }
 }
 
+// info section
 .info {
     display: flex;
     justify-content: center;
@@ -135,7 +140,7 @@ header.home {
     width: calc(100% - (50px + 5%));
 }
 
-
+// travel tips section
 .travelTips {
     background: $accentLight;
     display: flex;
@@ -181,6 +186,7 @@ header.home {
     }
 }
 
+// free trip section
 .freeTrip {
     padding: 10% 0;
     display: flex;

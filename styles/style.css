@@ -601,9 +601,6 @@ header.blog {
       -webkit-box-shadow: 20px 20px #50e3c2;
       box-shadow: 20px 20px #50e3c2; }
 
-.comments {
-  width: 100%; }
-
 .blogText,
 .comments .content,
 .form {
@@ -781,14 +778,14 @@ header.contact {
   .freeTrip p {
     font-size: 18px;
     font-size: 0.9rem; }
-  footer p {
-    font-size: 16px;
-    font-size: 0.8rem; }
   .gallery .image {
     float: none;
     margin-right: 0;
     margin-top: 5%;
-    width: 100%; } }
+    width: 100%; }
+  footer p {
+    font-size: 16px;
+    font-size: 0.8rem; } }
 
 @media (max-width: 500px) {
   header.home {

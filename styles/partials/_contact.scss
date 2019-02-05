@@ -1,9 +1,11 @@
+// header
 header.contact {
     background: url(../assets/contactImage1.jpg);
     background-size: cover;
     
 }
 
+// form
 .contactBody .form {
     background: $background;
     width: 60%;
@@ -13,11 +15,13 @@ header.contact {
     padding: 5%;
 }
 
+// main section
 .contactBody {
     position: relative;
     min-height: 600px;
 }
 
+// aside
 .contactAside {
     float: right;
     color: $text;

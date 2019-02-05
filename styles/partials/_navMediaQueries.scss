@@ -1,4 +1,8 @@
+// MEDIA QUERIES FOR NAVIGATION IN HEADER
+
+// 900px
 @media (max-width: 900px) {
+    // header
     .headerTop {
         nav {
             margin-right: 10%;
@@ -38,7 +42,9 @@
     }
 }
 
+// 400px
 @media (max-width: 400px) {
+    // header
 .headerTop {
     ul.subMenu {
         right: 2%;

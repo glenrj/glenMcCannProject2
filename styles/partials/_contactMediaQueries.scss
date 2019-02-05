@@ -1,12 +1,16 @@
+// MEDIA QUERIES FOR CONTACT PAGE
+
+// 1150px
 @media (max-width: 1150px) {
+    // aside
     .contactAside {
         margin-right: 1.5%;
     }
 }
 
 @media (max-width: 1000px) {
+    // aside
     .contactAside {
-        // text-align: center;
         float: none;
         clear: both;
         padding-top: 60%;
@@ -24,8 +28,7 @@
         }
     }
 
-    
-
+    // form
     .contactBody {
         .form {
             width: 80%;
@@ -33,19 +36,25 @@
     }
 }
 
+// 730px
 @media (max-width: 730px) {
+    // aside
     .contactAside {
         width: 90%;
     }
 }
 
+// 656px
 @media (max-width: 656px) {
+    // header
     header.contact {
         h1 {
             line-height: 1;
             @include fontSize(60)
         }
     }
+
+    // aside
     .contactAside {
         flex-direction: column;
         padding-top: 70%;
@@ -58,7 +67,9 @@
     }
 }
 
+// 550px
 @media (max-width: 550px) {
+    // aside
     .contactAside {
         padding-top: 90%;
          li,
@@ -66,6 +77,8 @@
              @include fontSize(18);
          }
     }
+
+    // footer
     footer p {
         @include fontSize(16);
     }
@@ -77,7 +90,9 @@
     }
 }
 
+// 400px
 @media (max-width: 400px) {
+    // aside
     .contactAside {
         padding-top: 120%;
     }

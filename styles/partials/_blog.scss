@@ -1,16 +1,18 @@
+// header
 header.blog {
     background: url(../assets/blogImage1.jpg);
     background-size: cover;
 
 }
 
-
+// blog
 .blog {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
 }
 
+// post
 .blogPost {
     width: 63%;
     border: 5px solid $primary;
@@ -24,10 +26,6 @@ header.blog {
             box-shadow: 20px 20px $primary;
         }
     }
-}
-
-.comments {
-    width: 100%;
 }
 
 .blogText,
@@ -50,6 +48,7 @@ header.blog {
     }
 }
 
+// aside
 .blogAside {
     width: 22%;
     margin-top: 10%;
@@ -81,12 +80,14 @@ header.blog {
     }
 }
 
+// comments
 .comments {
     width: 63%;
     h3 {
         color: $text;
     }
 }
+
 
 .comment {
     display: flex;

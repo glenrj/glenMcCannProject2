@@ -12,7 +12,9 @@
 <body>
     <!-- skip link (taken from notes and styles to match this design) -->
     <a href="#mainContent" class="skipLink">Skip to main content.</a>
+    <!-- HEADER BEGINS -->
     <header class="wrapper blog">
+        <!-- Top bar - nav and logo -->
         <div class="headerTop">
             <p class="logo">Beachstays</p>
             <nav>
@@ -28,14 +30,19 @@
                 </ul>
             </nav>
         </div>
+        <!-- title -->
         <h1>Blog</h1>
     </header>
+    <!-- MAIN SECTION BEGINS -->
     <main class="wrapper">
         <section class="blog">
+            <!-- blog post -->
             <div class="blogPost">
+                <!-- blog image -->
                 <div class="image">
                     <img src="assets/postImage.jpg" alt="Close up of the back of a beach house in the evening.">
                 </div>
+                <!-- blog content -->
                 <div class="blogText" id="mainContent">
                     <h2>Five days of ocean seas</h2>
                     <p class="blogInfo">Monday January 21st, 2019 by <span>Bora</span></p>
@@ -45,15 +52,19 @@
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic, quas recusandae accusamus quos ab vero tempore ipsam at obcaecati dicta! Libero, optio? Temporibus.</p>
                 </div>
             </div>
+            <!-- aside -->
             <aside class="blogAside">
+                <!-- aside image -->
                 <div class="image">
                     <img src="assets/sidebarImage.jpg" alt="A beach house on a sunny day with a dock extending into the ocean.">
                 </div>
+                <!-- our mission -->
                 <div class="mission">
                     <h3>Our mission</h3>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet eum incidunt quia?</p>
                     <p><a href="#">Find out more.</a></p>
                 </div>
+                <!-- recent blog posts -->
                 <div class="recent">
                     <h3>Recent Posts</h3>
                     <nav>
@@ -66,36 +77,48 @@
                     </nav>
                 </div>
             </aside> 
+            <!-- comments section -->
             <div class="comments">
                 <div class="content">
+                    <!-- user comments -->
                     <h3>Comments:</h3>
+                    <!-- user comment 1 -->
                     <div class="comment">
+                        <!-- profile image -->
                         <div class="image">
                             <img src="assets/commentImage.jpg" alt="A user photo of a person with a beard sitting indoors and looking at the camera.">
                         </div>
+                        <!-- comment text -->
                         <div class="commentText">
                             <p class="commentInfo">Tuesday October 9th, 2019 by Reyansh</p>
                             <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Autem dolorum dolore corporis laborum. Aliquid, quasi. Accusantium voluptatem officiis in, eum nostrum reprehenderit minus ipsa ipsum eligendi eos pariatur earum perferendis autem?</p>
                         </div>
                     </div>
+                    <!-- user comment 2 -->
                     <div class="comment">
+                        <!-- profile image -->
                         <div class="image">
                             <img src="assets/commentImage2.jpg" alt="A user photo of a person with with red sunglasses and in front of some palm trees.">
                         </div>
+                        <!-- comment text -->
                         <div class="commentText">
                             <p class="commentInfo">Wednesday October 10th, 2019 by Olivia</p>
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae a numquam, possimus velit quia officiis quis commodi mollitia!</p>
                         </div>
                     </div>
                 </div>
+                <!-- comment form -->
                     <div class="form">
                         <form action="#" method="POST" class="commentForm">
+                            <!-- name -->
                             <label for="userName" class="visuallyHidden">Name</label>
                             <input type="text" name="userName" id="userName" placeholder="Name">
-    
+                            
+                            <!-- email -->
                             <label for="userEmail" class="visuallyHidden"></label>
                             <input type="email" name="userEmail" id="userEmail" placeholder="Email address">
-    
+                            
+                            <!-- comment -->
                             <label for="userComment" class="visuallyHidden">Comment</label>
                             <textarea name="userComment" id="userComment" cols="30" rows="10" placeholder="Comment"></textarea>
     
@@ -105,6 +128,7 @@
                 </div>
         </section>
     </main>
+    <!-- FOOTER BEGINS -->
     <footer class="wrapper">
         <p>Copyright &copy; 2019 HackerYou</p>
     </footer>
