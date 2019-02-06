@@ -839,7 +839,7 @@ header.contact {
     width: 90%; }
   .blogAside {
     margin: 10% auto;
-    width: 90%;
+    width: 80%;
     -webkit-box-ordinal-group: 3;
     -ms-flex-order: 2;
     order: 2;
@@ -863,6 +863,16 @@ header.contact {
     width: 97.5%; } }
 
 @media (max-width: 700px) {
+  .blogAside {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column; }
+    .blogAside .mission,
+    .blogAside .recent {
+      width: 95%; }
+    .blogAside .recent li {
+      text-align: left; }
   .blogAside .mission p,
   .blogAside .recent li {
     font-size: 18px;
@@ -875,17 +885,7 @@ header.contact {
 
 @media (max-width: 650px) {
   .blogPost .image {
-    width: 97%; }
-  .blogAside {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column; }
-    .blogAside .mission,
-    .blogAside .recent {
-      width: 95%; }
-    .blogAside .recent li {
-      text-align: left; } }
+    width: 97%; } }
 
 @media (max-width: 550px) {
   header.blog {

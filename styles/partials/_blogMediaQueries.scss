@@ -30,7 +30,7 @@
     // aside
     .blogAside {
         margin: 10% auto;
-        width: 90%;
+        width: 80%;
         order: 2;
         display: flex;
         justify-content: space-between;
@@ -63,6 +63,17 @@
 @media (max-width: 700px) {
     // aside
     .blogAside {
+        flex-direction: column;
+        .mission,
+        .recent {
+            width: 95%;
+        }
+        .recent li {
+            text-align: left;
+        }
+    }
+    // font changes
+    .blogAside {
         .mission p,
         .recent li {
             @include fontSize(18);
@@ -81,18 +92,6 @@
     .blogPost {
         .image {
             width: 97%;
-        }
-    }
-
-    // aside
-    .blogAside {
-        flex-direction: column;
-        .mission,
-        .recent {
-            width: 95%;
-        }
-        .recent li {
-            text-align: left;
         }
     }
 }
