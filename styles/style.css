@@ -450,7 +450,6 @@ header.home {
 .gallery {
   background: #d2f9f1; }
   .gallery .content {
-    width: 85%;
     padding: 5% 0;
     margin: 0 auto; }
   .gallery .image {

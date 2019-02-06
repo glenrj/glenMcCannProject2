@@ -45,7 +45,7 @@
         padding: 0% 5%;
         .travelTipsLeft,
         .travelTipsRight {
-        width: 95%;
+            width: 95%;
             .text {
                 margin-left: 0;
                 width: 100%;
@@ -71,7 +71,7 @@
             margin-left: 1%;
         }
     }
-    
+
     // gallery
     .gallery .image:nth-child(1) {
         display: none;
@@ -150,9 +150,11 @@
             width: 100%;
         }
     }
+
     .infoIcon {
         display: none;
     }
+    
     .infoText {
         margin: 5% 0;
     }

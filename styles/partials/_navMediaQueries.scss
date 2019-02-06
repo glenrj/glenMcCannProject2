@@ -1,4 +1,4 @@
-// MEDIA QUERIES FOR NAVIGATION IN HEADER
+// MEDIA QUERIES FOR NAVIGATION IN HEADER OF EVERY PAGE
 
 // 900px
 @media (max-width: 900px) {
@@ -14,11 +14,9 @@
             width: 100%;
             padding: 0;
         }
-
         ul.mainMenu {
             padding-left: 0;
         }
-        
         .mobileMenu {
             text-align: right;
             min-width: 90px;
@@ -26,7 +24,6 @@
             position: relative;
             right: 0;
         }
-
         .mainMenu li:hover li,
         .mainMenu li:focus-within li {
             display: inline-block;
@@ -45,15 +42,15 @@
 // 400px
 @media (max-width: 400px) {
     // header
-.headerTop {
-    ul.subMenu {
-        right: 2%;
+    .headerTop {
+        ul.subMenu {
+            right: 2%;
+        }
+        nav {
+            margin-right: 2%;
+        }
+        p.logo {
+            margin-left: 2%;
+        }
     }
-    nav {
-        margin-right: 2%;
-    }
-    p.logo {
-        margin-left: 2%;
-    }
-}
 }
